@@ -1,4 +1,5 @@
-import 'package:college_app/view/address_view.dart';
+import 'package:college_app/helpers/app_route.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,12 +11,12 @@ class CollegeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       theme: ThemeData(
         scaffoldBackgroundColor: Color(0xffF4F5F7),
       ),
       debugShowCheckedModeBanner: false,
-      home: AddressView(),
+      routerConfig: AppRoute.router,
     );
   }
 }
