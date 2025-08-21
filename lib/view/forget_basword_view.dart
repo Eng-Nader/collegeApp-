@@ -98,7 +98,9 @@ class ForgetBaswordView extends StatelessWidget {
             ),
             CustomButton(
               title: 'Reset Passwrod',
-              onPressed: () {},
+              onPressed: () {
+                context.go(resentpassword);
+              },
             )
           ],
         ),

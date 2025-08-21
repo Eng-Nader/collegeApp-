@@ -4,6 +4,7 @@ import 'package:college_app/view/forget_basword_view.dart';
 import 'package:college_app/view/introduction_view.dart';
 import 'package:college_app/view/loginView.dart';
 import 'package:college_app/view/profile_view.dart';
+import 'package:college_app/view/resent_password_view.dart';
 import 'package:college_app/view/sign_up_view.dart';
 import 'package:go_router/go_router.dart';
 
@@ -40,6 +41,11 @@ class AppRoute {
           path: forgetPassword,
           builder: (context, state) {
             return ForgetBaswordView();
+          }), 
+      GoRoute(
+          path: resentpassword,
+          builder: (context, state) {
+            return ResentPasswordView();
           })
     ],
   );
