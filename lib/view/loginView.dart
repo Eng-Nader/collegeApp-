@@ -24,7 +24,7 @@ class LoginView extends StatelessWidget {
             ),
             CustomAppBar(
               title: 'Login',
-               onPressed: () => context.go('/'), 
+              onPressed: () => context.go('/'),
             ),
             SizedBox(
               height: 15,
@@ -50,7 +50,7 @@ class LoginView extends StatelessWidget {
             CustomTextFild(
               icon: Icons.lock,
               title: 'Enter your password',
-              suffixIcon: Icons.lock_open,
+              suffixIcon: Icons.visibility_off,
             ),
             Align(
               alignment: Alignment.centerRight,
@@ -59,7 +59,7 @@ class LoginView extends StatelessWidget {
                   foregroundColor: primaryColor,
                 ),
                 onPressed: () {
-                  context.go(forgetPassword); 
+                  context.go(forgetPassword);
                 },
                 child: Text(
                   'Forget password',

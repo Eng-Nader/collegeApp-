@@ -8,4 +8,5 @@ const String forgetPassword = '/forget-password';
 const String addressView = '/address';
 const String signupView = '/signup';
 const String resentpassword = '/resent-password';
+const String newPasswrod = '/new-password';
 

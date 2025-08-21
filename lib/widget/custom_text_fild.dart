@@ -3,14 +3,23 @@ import 'package:flutter/material.dart';
 
 class CustomTextFild extends StatelessWidget {
   const CustomTextFild(
-      {super.key, required this.icon, required this.title, this.suffixIcon});
+      {super.key,
+      required this.icon,
+      required this.title,
+      this.suffixIcon,
+      this.isObsure});
   final IconData icon;
   final String title;
   final IconData? suffixIcon;
+  final bool? isObsure;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      onTapOutside: (event) {
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
+      obscureText: isObsure ?? false,
       decoration: InputDecoration(
         suffixIcon: Icon(suffixIcon),
         hint: Row(

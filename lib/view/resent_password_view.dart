@@ -64,7 +64,11 @@ class ResentPasswordView extends StatelessWidget {
             SizedBox(
               height: 31,
             ),
-            CustomButton(title: 'Verify', onPressed: () {}),
+            CustomButton(
+                title: 'Verify',
+                onPressed: () {
+                  context.go(newPasswrod);
+                }),
             SizedBox(
               height: 24,
             ),
