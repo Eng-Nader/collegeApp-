@@ -24,7 +24,7 @@ class AppRoute {
       GoRoute(
           path: loginView,
           builder: (context, state) {
-            return Loginview();
+            return LoginView();
           }),
       GoRoute(
           path: profileView,
@@ -37,7 +37,7 @@ class AppRoute {
             return AddressView();
           }),
       GoRoute(
-          path: forgerpassword,
+          path: forgetPassword,
           builder: (context, state) {
             return ForgetBaswordView();
           })

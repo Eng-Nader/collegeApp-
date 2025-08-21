@@ -5,6 +5,7 @@ import 'package:college_app/widget/custom_text_auth.dart';
 import 'package:college_app/widget/custom_text_fild.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 
 class SignupView extends StatelessWidget {
   const SignupView({super.key});
@@ -19,7 +20,10 @@ class SignupView extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
-            CustomAppBar(title: 'SingUp'),
+            CustomAppBar(
+              title: 'SingUp',
+              onPressed: () =>context.go(loginView), 
+            ),
             SizedBox(
               height: 20,
             ),
@@ -88,7 +92,10 @@ class SignupView extends StatelessWidget {
             SizedBox(
               height: 40,
             ),
-            CustomButton(title: 'SignUp'),
+            CustomButton(
+              title: 'SignUp',
+              onPressed: () {},
+            ),
             SizedBox(
               height: 30,
             ),

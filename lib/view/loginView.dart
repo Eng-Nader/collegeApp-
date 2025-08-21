@@ -7,9 +7,10 @@ import 'package:college_app/widget/custom_fild_buttom.dart';
 import 'package:college_app/widget/custom_text_auth.dart';
 import 'package:college_app/widget/custom_text_fild.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-class Loginview extends StatelessWidget {
-  const Loginview({super.key});
+class LoginView extends StatelessWidget {
+  const LoginView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,10 @@ class Loginview extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
-            CustomAppBar(title: 'Login'),
+            CustomAppBar(
+              title: 'Login',
+               onPressed: () => context.go('/'), 
+            ),
             SizedBox(
               height: 15,
             ),
@@ -55,10 +59,7 @@ class Loginview extends StatelessWidget {
                   foregroundColor: primaryColor,
                 ),
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => ForgetBaswordView()));
+                  context.go(forgetPassword); 
                 },
                 child: Text(
                   'Forget password',
@@ -68,7 +69,10 @@ class Loginview extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            CustomButton(title: 'Login'),
+            CustomButton(
+              title: 'Login',
+              onPressed: () {},
+            ),
             SizedBox(
               height: 20,
             ),

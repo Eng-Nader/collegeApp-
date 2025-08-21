@@ -1,6 +1,7 @@
 import 'package:college_app/constant.dart';
 import 'package:college_app/view/sign_up_view.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomTextAuth extends StatelessWidget {
   const CustomTextAuth({super.key});
@@ -9,8 +10,7 @@ class CustomTextAuth extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => SignupView()));
+        context.go(signupView); 
       },
       child: Text.rich(
         TextSpan(

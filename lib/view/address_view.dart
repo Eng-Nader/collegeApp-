@@ -24,7 +24,10 @@ class AddressView extends StatelessWidget {
             SizedBox(
               height: 60,
             ),
-            CustomAppBar(title: 'Add Address'),
+            CustomAppBar(
+              title: 'Add Address',
+              onPressed: () => Navigator.pop(context),
+            ),
             ListView.builder(
               shrinkWrap: true,
               itemCount: addressList.length,
@@ -38,7 +41,10 @@ class AddressView extends StatelessWidget {
                 );
               },
             ),
-            CustomButton(title: 'Save'),
+            CustomButton(
+              title: 'Save',
+              onPressed: () {},
+            ),
           ],
         ),
       ),

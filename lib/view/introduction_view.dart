@@ -1,6 +1,8 @@
 import 'package:college_app/constant.dart';
+import 'package:college_app/view/loginView.dart';
 import 'package:college_app/widget/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class IntroductionView extends StatelessWidget {
   const IntroductionView({super.key});
@@ -11,7 +13,6 @@ class IntroductionView extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 6),
         child: Column(
-       
           children: [
             SizedBox(
               height: 70,
@@ -102,7 +103,12 @@ class IntroductionView extends StatelessWidget {
             SizedBox(
               height: 61,
             ),
-            CustomButton(title: 'Get Started'),
+            CustomButton(
+              title: 'Get Started',
+              onPressed: () {
+                context.go(loginView);
+              },
+            ),
           ],
         ),
       ),
