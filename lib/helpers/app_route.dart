@@ -1,6 +1,7 @@
 import 'package:college_app/constant.dart';
 import 'package:college_app/view/address_view.dart';
 import 'package:college_app/view/forget_basword_view.dart';
+import 'package:college_app/view/introduction_view.dart';
 import 'package:college_app/view/loginView.dart';
 import 'package:college_app/view/profile_view.dart';
 import 'package:college_app/view/sign_up_view.dart';
@@ -12,9 +13,14 @@ class AppRoute {
       GoRoute(
         path: '/',
         builder: (context, state) {
-          return SignupView();
+          return IntroductionView();
         },
       ),
+      GoRoute(
+          path: signupView,
+          builder: (context, state) {
+            return SignupView();
+          }),
       GoRoute(
           path: loginView,
           builder: (context, state) {
