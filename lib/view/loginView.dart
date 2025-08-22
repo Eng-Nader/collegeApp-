@@ -1,6 +1,4 @@
 import 'package:college_app/constant.dart';
-import 'package:college_app/view/forget_basword_view.dart';
-import 'package:college_app/view/sign_up_view.dart';
 import 'package:college_app/widget/custom_button.dart';
 import 'package:college_app/widget/custom_app_bar.dart';
 import 'package:college_app/widget/custom_fild_buttom.dart';
@@ -15,6 +13,7 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16),
         child: Column(

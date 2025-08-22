@@ -1,5 +1,4 @@
 import 'package:college_app/constant.dart';
-import 'package:college_app/view/sign_up_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

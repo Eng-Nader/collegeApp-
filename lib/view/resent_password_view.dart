@@ -2,9 +2,7 @@ import 'package:college_app/constant.dart';
 import 'package:college_app/widget/custom_button.dart';
 import 'package:college_app/widget/item_otp.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
 
 class ResentPasswordView extends StatelessWidget {
   const ResentPasswordView({super.key});

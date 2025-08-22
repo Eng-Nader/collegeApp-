@@ -4,7 +4,6 @@ import 'package:college_app/widget/custom_app_bar.dart';
 import 'package:college_app/widget/custom_text_auth.dart';
 import 'package:college_app/widget/custom_text_fild.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
 
 class SignupView extends StatelessWidget {
