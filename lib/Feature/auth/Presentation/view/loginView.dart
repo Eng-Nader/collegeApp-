@@ -4,6 +4,7 @@ import 'package:college_app/Feature/auth/Presentation/widget/custom_fild_buttom.
 import 'package:college_app/Feature/auth/Presentation/widget/custom_text_auth.dart';
 import 'package:college_app/Feature/auth/Presentation/widget/custom_text_fild.dart';
 import 'package:college_app/constant.dart';
+import 'package:college_app/core/assets/app_assets.dart';
 import 'package:college_app/core/function/show_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -107,21 +108,21 @@ class LoginView extends StatelessWidget {
               height: 50,
             ),
             CustomFildButoom(
-              image: 'image/google (3) 1.png',
+              image: AppAssets.googleLogo,
               title: 'Sign in With Google',
             ),
             SizedBox(
               height: 15,
             ),
             CustomFildButoom(
-              image: 'image/facebook (2) 1.png',
+              image: AppAssets.facebookLogo,
               title: 'Sign in With FaceBook ',
             ),
             SizedBox(
               height: 15,
             ),
             CustomFildButoom(
-              image: 'image/apple-logo (2) 1.png',
+              image: AppAssets.appleLogo,
               title: 'Sign in With Apple',
             )
           ],

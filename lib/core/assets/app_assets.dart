@@ -1,0 +1,8 @@
+class AppAssets {
+  static const appleLogo = 'assets/image/apple_logo.png';
+  static const googleLogo = 'assets/image/google_logo.png';
+  static const facebookLogo = 'assets/image/facebook_logo.png';
+  static const manLoog = 'assets/image/man.png';
+  static const man2Logo = 'assets/image/man2.png';
+  static const womanLogo = 'assets/image/woman.png';
+}

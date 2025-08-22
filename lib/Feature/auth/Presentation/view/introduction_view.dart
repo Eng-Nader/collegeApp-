@@ -1,5 +1,6 @@
 import 'package:college_app/Feature/auth/Presentation/widget/custom_button.dart';
 import 'package:college_app/constant.dart';
+import 'package:college_app/core/assets/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -24,7 +25,7 @@ class IntroductionView extends StatelessWidget {
                   width: 137,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('image/Rectangle 348.png'),
+                      image: AssetImage(AppAssets.manLoog),
                     ),
                   ),
                 ),
@@ -36,15 +37,21 @@ class IntroductionView extends StatelessWidget {
                         height: 214,
                         width: 137,
                         decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage('image/Rectangle 349.png'))),
+                          image: DecorationImage(
+                            image: AssetImage(
+                              AppAssets.man2Logo,
+                            ),
+                          ),
+                        ),
                       ),
                       SizedBox(
                         height: 23,
                       ),
                       CircleAvatar(
                         radius: 70,
-                        backgroundImage: AssetImage('image/Ellipse 57.png'),
+                        backgroundImage: AssetImage(
+                          AppAssets.womanLogo,
+                        ),
                       )
                     ],
                   ),

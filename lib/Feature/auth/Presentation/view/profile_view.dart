@@ -1,5 +1,6 @@
 import 'package:college_app/Feature/auth/data/model/profile_model.dart';
 import 'package:college_app/constant.dart';
+import 'package:college_app/core/assets/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class ProfileView extends StatefulWidget {
@@ -52,7 +53,7 @@ class _ProfileViewState extends State<ProfileView> {
               height: 30,
             ),
             CircleAvatar(
-              backgroundImage: AssetImage('image/spongpop.jpeg'),
+              backgroundImage: AssetImage(AppAssets.manLoog),
               radius: 70,
             ),
             SizedBox(
