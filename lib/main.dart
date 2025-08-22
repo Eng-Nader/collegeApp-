@@ -1,4 +1,4 @@
-import 'package:college_app/helpers/app_route.dart';
+import 'package:college_app/core/helpers/app_router.dart';
 
 import 'package:flutter/material.dart';
 

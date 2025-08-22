@@ -1,4 +1,5 @@
 import 'package:college_app/constant.dart';
+import 'package:college_app/core/function/show_dialog.dart';
 import 'package:college_app/widget/custom_button.dart';
 import 'package:college_app/widget/custom_text_fild.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +68,14 @@ class NewPasswordView extends StatelessWidget {
             ),
             CustomButton(
               title: 'Create Passwrod',
-              onPressed: () => context.go(loginView),
+              onPressed: () {
+                showSucessDiaglog(
+                    context: context,
+                    content: 'Success',
+                    titelButtom: 'Login',
+                    subContent:
+                        'Your account has been successfully\nregistered');
+              },
             ),
           ],
         ),

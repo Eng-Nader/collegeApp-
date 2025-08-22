@@ -1,4 +1,5 @@
 import 'package:college_app/constant.dart';
+import 'package:college_app/core/function/show_dialog.dart';
 import 'package:college_app/widget/custom_button.dart';
 import 'package:college_app/widget/custom_app_bar.dart';
 import 'package:college_app/widget/custom_fild_buttom.dart';
@@ -70,7 +71,15 @@ class LoginView extends StatelessWidget {
             ),
             CustomButton(
               title: 'Login',
-              onPressed: () {},
+              onPressed: () {
+                showSucessDiaglog(
+                  context: context,
+                  content: 'Yeay! Welcome Back',
+                  subContent:
+                      'Once again you login successfully\ninto medidoc app',
+                  titelButtom: 'Go to Home',
+                );
+              },
             ),
             SizedBox(
               height: 20,
