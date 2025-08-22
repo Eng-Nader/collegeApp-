@@ -4,9 +4,15 @@ import 'package:college_app/widget/custom_text_fild.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class ForgetBaswordView extends StatelessWidget {
+class ForgetBaswordView extends StatefulWidget {
   const ForgetBaswordView({super.key});
 
+  @override
+  State<ForgetBaswordView> createState() => _ForgetBaswordViewState();
+}
+
+class _ForgetBaswordViewState extends State<ForgetBaswordView> {
+  bool isPhone = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,7 +72,10 @@ class ForgetBaswordView extends StatelessWidget {
                 children: [
                   Expanded(
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        isPhone = false;
+                        setState(() {});
+                      },
                       child: Text(
                         'Email',
                         style: TextStyle(
@@ -77,7 +86,10 @@ class ForgetBaswordView extends StatelessWidget {
                   ),
                   Expanded(
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        isPhone = true;
+                        setState(() {});
+                      },
                       child: Text(
                         'Phone',
                         style: TextStyle(
@@ -92,7 +104,10 @@ class ForgetBaswordView extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            CustomTextFild(icon: Icons.email, title: 'Enter Your Email'),
+            CustomTextFild(
+              icon: Icons.email,
+              title: isPhone == true ? 'Enter your Phone ' : 'Enter your Email',
+            ),
             SizedBox(
               height: 30,
             ),
