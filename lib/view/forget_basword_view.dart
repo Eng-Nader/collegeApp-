@@ -79,7 +79,7 @@ class _ForgetBaswordViewState extends State<ForgetBaswordView> {
                       child: Text(
                         'Email',
                         style: TextStyle(
-                          color: primaryColor,
+                          color: isPhone == false ? primaryColor : Colors.black,
                         ),
                       ),
                     ),
@@ -93,7 +93,7 @@ class _ForgetBaswordViewState extends State<ForgetBaswordView> {
                       child: Text(
                         'Phone',
                         style: TextStyle(
-                          color: primaryColor,
+                          color: isPhone == true ? primaryColor : Colors.black,
                         ),
                       ),
                     ),
@@ -105,7 +105,7 @@ class _ForgetBaswordViewState extends State<ForgetBaswordView> {
               height: 20,
             ),
             CustomTextFild(
-              icon: Icons.email,
+              icon: isPhone == true ? Icons.phone : Icons.email,
               title: isPhone == true ? 'Enter your Phone ' : 'Enter your Email',
             ),
             SizedBox(
