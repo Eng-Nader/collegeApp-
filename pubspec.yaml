@@ -93,3 +93,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_native_splash:
+  background_image: assets/image/splash_light_mode.png
+  background_image_dark: assets/image/splash_dark_mode.png
+
+  android_12:

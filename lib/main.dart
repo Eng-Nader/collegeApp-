@@ -1,8 +1,11 @@
+import 'dart:io';
+
 import 'package:college_app/core/helpers/app_router.dart';
 
 import 'package:flutter/material.dart';
 
 void main() {
+ 
   runApp(const CollegeApp());
 }
 
