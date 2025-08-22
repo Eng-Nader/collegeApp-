@@ -1,12 +1,12 @@
+import 'package:college_app/Feature/auth/Presentation/view/address_view.dart';
+import 'package:college_app/Feature/auth/Presentation/view/forget_basword_view.dart';
+import 'package:college_app/Feature/auth/Presentation/view/introduction_view.dart';
+import 'package:college_app/Feature/auth/Presentation/view/loginView.dart';
+import 'package:college_app/Feature/auth/Presentation/view/new_password_view.dart';
+import 'package:college_app/Feature/auth/Presentation/view/profile_view.dart';
+import 'package:college_app/Feature/auth/Presentation/view/resent_password_view.dart';
+import 'package:college_app/Feature/auth/Presentation/view/sign_up_view.dart';
 import 'package:college_app/constant.dart';
-import 'package:college_app/view/address_view.dart';
-import 'package:college_app/view/forget_basword_view.dart';
-import 'package:college_app/view/introduction_view.dart';
-import 'package:college_app/view/loginView.dart';
-import 'package:college_app/view/new_password_view.dart';
-import 'package:college_app/view/profile_view.dart';
-import 'package:college_app/view/resent_password_view.dart';
-import 'package:college_app/view/sign_up_view.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRoute {

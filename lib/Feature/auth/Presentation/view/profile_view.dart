@@ -1,5 +1,5 @@
+import 'package:college_app/Feature/auth/data/model/profile_model.dart';
 import 'package:college_app/constant.dart';
-import 'package:college_app/model/profile_model.dart';
 import 'package:flutter/material.dart';
 
 class ProfileView extends StatefulWidget {

@@ -1,5 +1,5 @@
+import 'package:college_app/Feature/auth/Presentation/widget/custom_button.dart';
 import 'package:college_app/constant.dart';
-import 'package:college_app/widget/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

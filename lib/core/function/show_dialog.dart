@@ -1,4 +1,4 @@
-import 'package:college_app/widget/dialog_body.dart';
+import 'package:college_app/Feature/auth/Presentation/widget/dialog_body.dart';
 import 'package:flutter/material.dart';
 
 void showSucessDiaglog({

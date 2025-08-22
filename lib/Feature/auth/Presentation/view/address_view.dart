@@ -1,6 +1,7 @@
-import 'package:college_app/widget/address_text_filed.dart';
-import 'package:college_app/widget/custom_app_bar.dart';
-import 'package:college_app/widget/custom_button.dart';
+import 'package:college_app/Feature/auth/Presentation/widget/address_text_filed.dart';
+import 'package:college_app/Feature/auth/Presentation/widget/custom_app_bar.dart';
+import 'package:college_app/Feature/auth/Presentation/widget/custom_button.dart';
+
 import 'package:flutter/material.dart';
 
 class AddressView extends StatelessWidget {
