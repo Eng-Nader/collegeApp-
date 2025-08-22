@@ -6,6 +6,7 @@ void showSucessDiaglog({
   required String content,
   required String titelButtom,
   required String subContent,
+  required VoidCallback onPressed,
 }) {
   showDialog(
     context: context,
@@ -14,6 +15,7 @@ void showSucessDiaglog({
         content: content,
         titelButtom: titelButtom,
         subContent: subContent,
+        onPressed: onPressed,
       );
     },
   );

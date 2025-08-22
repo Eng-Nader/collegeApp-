@@ -78,6 +78,7 @@ class LoginView extends StatelessWidget {
                   subContent:
                       'Once again you login successfully\ninto medidoc app',
                   titelButtom: 'Go to Home',
+                  onPressed: () => context.go(homeView),
                 );
               },
             ),

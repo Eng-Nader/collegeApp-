@@ -3,6 +3,7 @@ import 'package:college_app/Feature/auth/Presentation/widget/custom_button.dart'
 import 'package:college_app/Feature/auth/Presentation/widget/custom_text_auth.dart';
 import 'package:college_app/Feature/auth/Presentation/widget/custom_text_fild.dart';
 import 'package:college_app/constant.dart';
+import 'package:college_app/core/function/show_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -21,7 +22,7 @@ class SignupView extends StatelessWidget {
             ),
             CustomAppBar(
               title: 'SingUp',
-              onPressed: () =>context.go(loginView), 
+              onPressed: () => context.go(loginView),
             ),
             SizedBox(
               height: 20,
@@ -93,7 +94,15 @@ class SignupView extends StatelessWidget {
             ),
             CustomButton(
               title: 'SignUp',
-              onPressed: () {},
+              onPressed: () {
+                showSucessDiaglog(
+                    context: context,
+                    content: 'Success',
+                    titelButtom: 'Login',
+                    subContent:
+                        'Your account has been successfully\nregistered',
+                    onPressed: () => context.go(loginView));
+              },
             ),
             SizedBox(
               height: 30,

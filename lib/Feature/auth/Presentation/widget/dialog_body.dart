@@ -8,10 +8,11 @@ class DialogBody extends StatelessWidget {
       {super.key,
       required this.content,
       required this.titelButtom,
-      required this.subContent});
+      required this.subContent, required this.onPressed});
   final String content;
   final String subContent;
   final String titelButtom;
+  final VoidCallback onPressed ; 
 
   @override
   Widget build(BuildContext context) {
@@ -60,9 +61,7 @@ class DialogBody extends StatelessWidget {
             SizedBox(height: 37),
             CustomButton(
               title: titelButtom,
-              onPressed: () {
-                context.go(loginView);
-              },
+              onPressed:  onPressed , 
             )
           ],
         ),

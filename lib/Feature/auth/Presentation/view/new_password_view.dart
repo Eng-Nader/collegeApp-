@@ -74,7 +74,9 @@ class NewPasswordView extends StatelessWidget {
                     content: 'Success',
                     titelButtom: 'Login',
                     subContent:
-                        'Your account has been successfully\nregistered');
+                        'Your account has been successfully\nregistered', 
+                        onPressed: () => context.go(loginView),
+                        );
               },
             ),
           ],
