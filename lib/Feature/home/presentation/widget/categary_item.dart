@@ -3,8 +3,15 @@ import 'package:college_app/constant.dart';
 import 'package:flutter/material.dart';
 
 class CategaryItem extends StatelessWidget {
-  const CategaryItem({super.key, required this.categaryModel});
+  const CategaryItem({
+    super.key,
+    required this.categaryModel,
+    required this.isActive,
+    required this.onTap,
+  });
   final CategaryModel categaryModel;
+  final bool isActive;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -14,13 +21,17 @@ class CategaryItem extends StatelessWidget {
         height: 60,
         child: Column(
           children: [
-            CircleAvatar(
-              radius: 35,
-              backgroundColor: primaryColor,
+            GestureDetector(
+              onTap: onTap,
               child: CircleAvatar(
+                radius: 35,
+                backgroundColor: isActive ? primaryColor : Colors.white,
+                child: CircleAvatar(
                   radius: 33,
                   backgroundColor: Color(0xffF4F5F7),
-                  child: Image.asset(categaryModel.image)),
+                  child: Image.asset(categaryModel.image),
+                ),
+              ),
             ),
             SizedBox(
               height: 5,
@@ -28,6 +39,7 @@ class CategaryItem extends StatelessWidget {
             Text(
               categaryModel.text,
               style: TextStyle(
+                color: isActive ? primaryColor : Colors.black,
                 fontSize: 16,
                 fontWeight: FontWeight.w700,
               ),

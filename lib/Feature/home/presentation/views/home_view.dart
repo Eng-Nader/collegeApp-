@@ -1,7 +1,6 @@
 import 'package:college_app/Feature/home/presentation/widget/categary_list_view.dart';
 import 'package:college_app/Feature/home/presentation/widget/home_app_bar.dart';
 import 'package:college_app/Feature/home/presentation/widget/home_collection.dart';
-import 'package:college_app/constant.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {

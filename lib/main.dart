@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:college_app/core/helpers/app_router.dart';
 
