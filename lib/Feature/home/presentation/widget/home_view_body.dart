@@ -10,71 +10,78 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 17),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          SizedBox(
-            height: 40,
-          ),
-          HomeAppBar(),
-          SizedBox(
-            height: 28,
-          ),
-          HomeCollection(),
-          SizedBox(
-            height: 28,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                'Categary',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w700,
+    return CustomScrollView(
+      physics: BouncingScrollPhysics(),
+      slivers: [
+        SliverToBoxAdapter(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 17),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SizedBox(
+                  height: 40,
                 ),
-              ),
-              Opacity(
-                opacity: .4,
-                child: Text(
-                  'See All',
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w400,
+                HomeAppBar(),
+                SizedBox(
+                  height: 28,
+                ),
+                HomeCollection(),
+                SizedBox(
+                  height: 28,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Categary',
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    Opacity(
+                      opacity: .4,
+                      child: Text(
+                        'See All',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                CategaryListView(),
+                SizedBox(
+                  height: 35,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 16),
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'Flash Sale',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
                   ),
                 ),
-              )
-            ],
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          CategaryListView(),
-          SizedBox(
-            height: 35,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16),
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Flash Sale',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w700,
+                SizedBox(
+                  height: 10,
                 ),
-              ),
+                SalesListView(),
+                SalesGridView()
+              ],
             ),
           ),
-          SizedBox(
-            height: 10,
-          ),
-          SalesListView(),
-          SalesGridView()
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

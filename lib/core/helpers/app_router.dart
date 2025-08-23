@@ -6,7 +6,7 @@ import 'package:college_app/Feature/auth/Presentation/view/new_password_view.dar
 import 'package:college_app/Feature/auth/Presentation/view/resent_password_view.dart';
 import 'package:college_app/Feature/auth/Presentation/view/sign_up_view.dart';
 import 'package:college_app/Feature/home/presentation/views/home_view.dart';
-import 'package:college_app/Feature/home/presentation/views/profile_view.dart';
+import 'package:college_app/Feature/profile/presentation/view/profile_view.dart';
 import 'package:college_app/constant.dart';
 import 'package:go_router/go_router.dart';
 
@@ -53,7 +53,7 @@ class AppRoute {
           path: newPasswrod,
           builder: (context, state) {
             return NewPasswordView();
-          }), 
+          }),
       GoRoute(
           path: homeView,
           builder: (context, state) {
