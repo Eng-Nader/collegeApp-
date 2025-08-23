@@ -1,11 +1,13 @@
+import 'package:college_app/Feature/auth/data/model/profile_model.dart';
 import 'package:college_app/constant.dart';
 import 'package:college_app/core/assets/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class ProfileViewBody extends StatelessWidget {
-  const ProfileViewBody({super.key});
+  const ProfileViewBody({super.key, required this.profileList});
+  final List <ProfileModel> profileList ; 
   
-  get profileList => null;
+  
 
   @override
   Widget build(BuildContext context) {

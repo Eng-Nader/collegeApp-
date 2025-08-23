@@ -1,7 +1,5 @@
 import 'package:college_app/Feature/auth/data/model/profile_model.dart';
 import 'package:college_app/Feature/profile/presentation/widget/profile_view_body.dart';
-import 'package:college_app/constant.dart';
-import 'package:college_app/core/assets/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class ProfileView extends StatelessWidget {
@@ -37,7 +35,9 @@ class ProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ProfileViewBody(),
+      body: ProfileViewBody(
+        profileList: profileList,
+      ),
     );
   }
 }
