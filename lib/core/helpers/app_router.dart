@@ -3,10 +3,10 @@ import 'package:college_app/Feature/auth/Presentation/view/forget_basword_view.d
 import 'package:college_app/Feature/auth/Presentation/view/introduction_view.dart';
 import 'package:college_app/Feature/auth/Presentation/view/loginView.dart';
 import 'package:college_app/Feature/auth/Presentation/view/new_password_view.dart';
-import 'package:college_app/Feature/auth/Presentation/view/profile_view.dart';
 import 'package:college_app/Feature/auth/Presentation/view/resent_password_view.dart';
 import 'package:college_app/Feature/auth/Presentation/view/sign_up_view.dart';
 import 'package:college_app/Feature/home/presentation/views/home_view.dart';
+import 'package:college_app/Feature/home/presentation/views/profile_view.dart';
 import 'package:college_app/constant.dart';
 import 'package:go_router/go_router.dart';
 

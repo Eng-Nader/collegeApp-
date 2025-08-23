@@ -1,4 +1,5 @@
 import 'package:college_app/Feature/home/presentation/widget/home_view_body.dart';
+import 'package:college_app/core/widget/cutom_bottom_navigate.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -14,6 +15,7 @@ class HomeView extends StatelessWidget {
           )
         ],
       ),
+      bottomNavigationBar: CutomBottomNavigate(),
     );
   }
 }
