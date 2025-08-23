@@ -1,22 +1,15 @@
 import 'package:flutter/material.dart';
 
-class CutomBottomNavigate extends StatefulWidget {
-  const CutomBottomNavigate({super.key});
+class CutomBottomNavigate extends StatelessWidget {
+  const CutomBottomNavigate(
+      {super.key, this.onTap, required this.currentIndex});
+  final void Function(int)? onTap;
+  final int currentIndex;
 
-  @override
-  State<CutomBottomNavigate> createState() => _CutomBottomNavigateState();
-}
-
-class _CutomBottomNavigateState extends State<CutomBottomNavigate> {
-  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      onTap: (index) {
-        setState(() {
-          currentIndex = index;
-        });
-      },
+      onTap: onTap,
       currentIndex: currentIndex,
       type: BottomNavigationBarType.fixed,
       selectedItemColor: Color(0xffDD8560),
