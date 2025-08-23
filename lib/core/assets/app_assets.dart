@@ -6,4 +6,5 @@ class AppAssets {
   static const man2Logo = 'assets/image/man2.png';
   static const womanLogo = 'assets/image/woman.png';
   static const bell = 'assets/image/bell.png';
+  static const collectionCloses = 'assets/image/colletion_closes.png';
 }
