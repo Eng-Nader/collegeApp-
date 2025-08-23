@@ -3,23 +3,35 @@ import 'package:college_app/constant.dart';
 import 'package:college_app/core/assets/app_assets.dart';
 import 'package:flutter/material.dart';
 
-class ProfileView extends StatefulWidget {
+class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
 
-  @override
-  State<ProfileView> createState() => _ProfileViewState();
-}
-
-class _ProfileViewState extends State<ProfileView> {
   final List<ProfileModel> profileList = const [
-    ProfileModel(icon: Icons.person, text: 'Your Profile'),
-    ProfileModel(icon: Icons.list, text: 'My Order'),
-    ProfileModel(icon: Icons.payment, text: 'Payment Method'),
-    ProfileModel(icon: Icons.favorite, text: 'Whilist'),
-    ProfileModel(icon: Icons.settings, text: 'Settings'),
-    ProfileModel(icon: Icons.logout, text: 'LogOut'),
+    ProfileModel(
+      icon: Icons.person,
+      text: 'Your Profile',
+    ),
+    ProfileModel(
+      icon: Icons.list,
+      text: 'My Order',
+    ),
+    ProfileModel(
+      icon: Icons.payment,
+      text: 'Payment Method',
+    ),
+    ProfileModel(
+      icon: Icons.favorite,
+      text: 'Whilist',
+    ),
+    ProfileModel(
+      icon: Icons.settings,
+      text: 'Settings',
+    ),
+    ProfileModel(
+      icon: Icons.logout,
+      text: 'LogOut',
+    ),
   ];
-  int index = 3;
 
   @override
   Widget build(BuildContext context) {
@@ -97,32 +109,6 @@ class _ProfileViewState extends State<ProfileView> {
             )
           ],
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: index,
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: Color(0xffDD8560),
-        unselectedItemColor: Colors.grey,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart),
-            label: "Cart",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: "Favorite",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: "Profile",
-          ),
-        ],
       ),
     );
   }

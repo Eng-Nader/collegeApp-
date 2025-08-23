@@ -2,14 +2,14 @@ import 'package:college_app/Feature/home/data/models/categary_model.dart';
 import 'package:college_app/Feature/home/presentation/widget/categary_item.dart';
 import 'package:flutter/material.dart';
 
-class CategaryListVie extends StatefulWidget {
-  const CategaryListVie({super.key});
+class CategaryListView extends StatefulWidget {
+  const CategaryListView({super.key});
 
   @override
-  State<CategaryListVie> createState() => _CategaryListVieState();
+  State<CategaryListView> createState() => _CategaryListViewState();
 }
 
-class _CategaryListVieState extends State<CategaryListVie> {
+class _CategaryListViewState extends State<CategaryListView> {
   final List<CategaryModel> categatyList = const [
     CategaryModel(
       'assets/image/Blazar.png',
@@ -68,8 +68,10 @@ class _CategaryListVieState extends State<CategaryListVie> {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return SizedBox(
+      height: 100,
       child: ListView.builder(
+        physics: BouncingScrollPhysics(),
         itemCount: categatyList.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {

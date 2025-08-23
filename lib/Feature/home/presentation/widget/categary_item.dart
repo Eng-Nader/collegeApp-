@@ -17,35 +17,32 @@ class CategaryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 15),
-      child: SizedBox(
-        height: 60,
-        child: Column(
-          children: [
-            GestureDetector(
-              onTap: onTap,
+      child: Column(
+        children: [
+          GestureDetector(
+            onTap: onTap,
+            child: CircleAvatar(
+              radius: 35,
+              backgroundColor: isActive ? primaryColor : Colors.white,
               child: CircleAvatar(
-                radius: 35,
-                backgroundColor: isActive ? primaryColor : Colors.white,
-                child: CircleAvatar(
-                  radius: 33,
-                  backgroundColor: Color(0xffF4F5F7),
-                  child: Image.asset(categaryModel.image),
-                ),
+                radius: 33,
+                backgroundColor: Color(0xffF4F5F7),
+                child: Image.asset(categaryModel.image),
               ),
             ),
-            SizedBox(
-              height: 5,
+          ),
+          SizedBox(
+            height: 5,
+          ),
+          Text(
+            categaryModel.text,
+            style: TextStyle(
+              color: isActive ? primaryColor : Colors.black,
+              fontSize: 16,
+              fontWeight: FontWeight.w700,
             ),
-            Text(
-              categaryModel.text,
-              style: TextStyle(
-                color: isActive ? primaryColor : Colors.black,
-                fontSize: 16,
-                fontWeight: FontWeight.w700,
-              ),
-            )
-          ],
-        ),
+          )
+        ],
       ),
     );
   }
