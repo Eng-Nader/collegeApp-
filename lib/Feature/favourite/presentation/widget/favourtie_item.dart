@@ -1,5 +1,6 @@
 import 'package:college_app/constant.dart';
 import 'package:college_app/core/assets/app_assets.dart';
+import 'package:college_app/core/widget/rating.dart';
 import 'package:flutter/material.dart';
 
 class FavouriteItem extends StatelessWidget {
@@ -16,12 +17,12 @@ class FavouriteItem extends StatelessWidget {
           Stack(
             children: [
               Image.asset(
-                AppAssets.salesMan,
+                AppAssets.salesWoman,
                 fit: BoxFit.cover,
               ),
               Positioned(
                 top: 5,
-                left: 10,
+                left: 5,
                 child: CircleAvatar(
                   child: Icon(
                     Icons.favorite,
@@ -44,14 +45,7 @@ class FavouriteItem extends StatelessWidget {
               SizedBox(
                 width: 10,
               ),
-              Icon(
-                Icons.star,
-                color: Colors.amber,
-              ),
-              Text(
-                '4.9',
-                style: TextStyle(fontSize: 13),
-              ),
+              Rating(),
             ],
           ),
           Align(

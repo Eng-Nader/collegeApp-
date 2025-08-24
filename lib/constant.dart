@@ -11,4 +11,5 @@ const String newPasswrod = '/new-password';
 const String homeView = '/home';
 const String introductionView = '/intro';
 const String favDetails = '/details';
+const String faveView = '/favView';
 

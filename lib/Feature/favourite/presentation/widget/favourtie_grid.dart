@@ -15,10 +15,11 @@ class FavouriteGrid extends StatelessWidget {
       itemCount: 8,
       itemBuilder: (context, index) {
         return GestureDetector(
-            onTap: () {
-              context.go(favDetails);
-            },
-            child: FavouriteItem());
+          onTap: () {
+            context.push(favDetails);
+          },
+          child: FavouriteItem(),
+        );
       },
     );
   }
