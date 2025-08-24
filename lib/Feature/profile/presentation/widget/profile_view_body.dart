@@ -53,8 +53,8 @@ class ProfileViewBody extends StatelessWidget {
                   'Nader Sameer',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ],

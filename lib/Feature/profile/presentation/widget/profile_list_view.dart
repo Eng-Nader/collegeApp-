@@ -1,4 +1,3 @@
-
 import 'package:college_app/Feature/auth/data/model/profile_model.dart';
 import 'package:college_app/constant.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +16,7 @@ class ProfileListView extends StatelessWidget {
       itemCount: profileList.length,
       itemBuilder: (context, index) {
         return Padding(
-          padding: EdgeInsets.only(bottom: 16),
+          padding: EdgeInsets.all(12),
           child: Card(
             color: Colors.white,
             child: ListTile(

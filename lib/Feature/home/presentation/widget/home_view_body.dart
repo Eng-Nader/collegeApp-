@@ -76,11 +76,14 @@ class HomeViewBody extends StatelessWidget {
                   height: 10,
                 ),
                 SalesListView(),
-                SalesGridView()
+                SizedBox(
+                  height: 20,
+                ),
               ],
             ),
           ),
         ),
+        SalesGridView(),
       ],
     );
   }
