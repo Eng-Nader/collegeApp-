@@ -15,14 +15,16 @@ class SalesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16),
+      padding: EdgeInsets.symmetric(horizontal: 8),
       child: GestureDetector(
         onTap: onTap,
         child: Container(
+          width: 100,
           decoration: BoxDecoration(
               color: isActive ? primaryColor : Colors.white,
               borderRadius: BorderRadius.circular(8)),
           child: Text(
+            textAlign: TextAlign.center,
             salesModel.text,
             style: TextStyle(
               fontWeight: FontWeight.bold,

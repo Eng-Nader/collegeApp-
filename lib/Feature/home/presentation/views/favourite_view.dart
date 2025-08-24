@@ -1,3 +1,4 @@
+import 'package:college_app/Feature/favourite/presentation/widget/favourite_view_body.dart';
 import 'package:flutter/material.dart';
 
 class FavouriteView extends StatelessWidget {
@@ -6,7 +7,7 @@ class FavouriteView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      
+      body: FavouriteViewBody(),
     );
   }
 }
