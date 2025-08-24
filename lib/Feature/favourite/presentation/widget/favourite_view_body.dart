@@ -1,4 +1,5 @@
 import 'package:college_app/Feature/auth/Presentation/widget/custom_app_bar.dart';
+import 'package:college_app/Feature/favourite/presentation/widget/favourtie_grid.dart';
 import 'package:college_app/Feature/home/presentation/widget/sales_list_view.dart';
 import 'package:flutter/material.dart';
 
@@ -23,9 +24,13 @@ class FavouriteViewBody extends StatelessWidget {
                 height: 30,
               ),
               SalesListView(),
+              SizedBox(
+                height: 32,
+              ),
             ],
           ),
-        )
+        ),
+        FavouriteGrid(),
       ],
     );
   }

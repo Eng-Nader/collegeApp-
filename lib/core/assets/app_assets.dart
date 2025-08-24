@@ -9,4 +9,6 @@ class AppAssets {
   static const collectionCloses = 'assets/image/colletion_closes.png';
   static const splashLogo = 'assets/image/splashLogo.png';
   static const splashLogo2 = 'assets/image/suits.png';
+  static const salesMan = 'assets/image/salesman.png';
+  static const salesWoman = 'assets/image/salesWoman1.png';
 }
