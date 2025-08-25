@@ -11,4 +11,8 @@ class AppAssets {
   static const splashLogo2 = 'assets/image/suits.png';
   static const salesMan = 'assets/image/salesman.png';
   static const salesWoman = 'assets/image/salesWoman1.png';
+  static const onBorderMan = 'assets/image/onboreder1.png';
+  static const onBorderMan2 = 'assets/image/onborder3.png';
+  static const onBorderWoman = 'assets/image/onborder2.png';
+
 }

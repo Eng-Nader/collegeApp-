@@ -1,4 +1,6 @@
+import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:college_app/constant.dart';
+import 'package:college_app/core/function/show_snack_bar.dart';
 import 'package:flutter/material.dart';
 
 class AddToCardButtom extends StatelessWidget {
@@ -51,7 +53,14 @@ class AddToCardButtom extends StatelessWidget {
                 ),
                 minimumSize: const Size(200, 48),
               ),
-              onPressed: () {},
+              onPressed: () {
+                showSnackBa(
+                  context: context,
+                  title: 'Sucess Add',
+                  message: 'You Add a product to Your Card',
+                  content: ContentType.success,
+                );
+              },
               child: const Text(
                 'Add To Card',
                 style: TextStyle(

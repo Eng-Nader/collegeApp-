@@ -12,4 +12,7 @@ const String homeView = '/home';
 const String introductionView = '/intro';
 const String favDetails = '/details';
 const String faveView = '/favView';
+const String onBorder = '/onBorderView';
+
+
 

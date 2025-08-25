@@ -18,7 +18,7 @@ class _SplashViewState extends State<SplashView> {
         const Duration(seconds: 2),
         () {
           if (context.mounted) {
-            context.go(introductionView);
+            context.go(onBorder);
           }
         },
       );

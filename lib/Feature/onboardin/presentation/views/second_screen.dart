@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CardView extends StatelessWidget {
-  const CardView({super.key});
+class SecondScreen extends StatelessWidget {
+  const SecondScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
