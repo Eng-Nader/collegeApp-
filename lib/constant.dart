@@ -13,6 +13,7 @@ const String introductionView = '/intro';
 const String favDetails = '/details';
 const String faveView = '/favView';
 const String onBorder = '/onBorderView';
+const String  onborderSecond = '/onbordersecond';
 
 
 

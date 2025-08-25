@@ -3,6 +3,7 @@ import 'package:college_app/Feature/onboardin/presentation/views/second_screen.d
 import 'package:college_app/Feature/onboardin/presentation/views/third_screen.dart';
 import 'package:college_app/constant.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class OnBoardingView extends StatefulWidget {
   const OnBoardingView({super.key});
@@ -23,37 +24,31 @@ class _OnBoardingViewState extends State<OnBoardingView> {
             child: PageView(
               controller: _controller,
               children: [
-                const FirstScreen(),
-                const SecondScreen(),
+                FirstScreen(
+                  currentIndex: currentIndex,
+                  onTap: () {
+                    setState(() {
+                      currentIndex = 1;
+                    });
+                    context.push(onborderSecond);
+                  },
+                ),
+                SecondScreen(
+                  onPrviousTap: () {
+                    context.pop();
+                    setState(() {
+                      currentIndex = 0;
+                    });
+                  },
+                  onTap: () {},
+                  currentIndex: 2,
+                ),
                 const ThirdScreen(),
               ],
             ),
           ),
-          const Row(
-            children: [],
-          )
         ],
       ),
-    );
-  }
-}
-
-class CustomIndector extends StatelessWidget {
-  const CustomIndector({super.key, required this.isActive});
-  final bool isActive;
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: const Duration(
-        milliseconds: 250,
-      ),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(120),
-        color: isActive ? primaryColor : Colors.white,
-      ),
-      width: isActive ? 40 : 10,
-      height: 20,
     );
   }
 }

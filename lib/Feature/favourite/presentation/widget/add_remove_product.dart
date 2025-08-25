@@ -45,9 +45,22 @@ class _AddAndRmoveProductState extends State<AddAndRmoveProduct> {
               size: 30,
             ),
           ),
-          Text(
-            '$productMount',
-            style: const TextStyle(fontSize: 25),
+          AnimatedSwitcher(
+            duration: const Duration(milliseconds: 250),
+            transitionBuilder: (child, animation) {
+              return ScaleTransition(
+                scale: animation,
+                child: child,
+              );
+            },
+            child: Text(
+              key: ValueKey(productMount),
+              productMount.toString(),
+              style: const TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
           IconButton(
             onPressed: addProduct,
@@ -55,7 +68,7 @@ class _AddAndRmoveProductState extends State<AddAndRmoveProduct> {
               Icons.add,
               size: 30,
             ),
-          ), 
+          ),
         ],
       ),
     );
