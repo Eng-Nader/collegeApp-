@@ -12,7 +12,7 @@ class CustomFildButoom extends StatelessWidget {
     return FilledButton(
       style: FilledButton.styleFrom(
         backgroundColor: Colors.white,
-        minimumSize: Size(400, 56),
+        minimumSize: const Size(400, 56),
       ),
       onPressed: () {},
       child: Row(
@@ -21,12 +21,12 @@ class CustomFildButoom extends StatelessWidget {
             image,
             height: 30,
           ),
-          SizedBox(
+          const SizedBox(
             width: 30,
           ),
           Text(
             title,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.black,
               fontSize: 20,
               fontWeight: FontWeight.bold,

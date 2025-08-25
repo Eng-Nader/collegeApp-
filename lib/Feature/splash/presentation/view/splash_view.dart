@@ -15,7 +15,7 @@ class _SplashViewState extends State<SplashView> {
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Future.delayed(
-        Duration(seconds: 2),
+        const Duration(seconds: 2),
         () {
           if (context.mounted) {
             context.go(introductionView);
@@ -28,7 +28,7 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: primaryColor,
       body: SplashViewBody(),
     );

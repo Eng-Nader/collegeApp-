@@ -17,22 +17,22 @@ class HomeCollection extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
           ),
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 28, vertical: 14),
+            padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 14),
             child: Row(
               children: [
                 Column(
                   children: [
-                    Text(
+                    const Text(
                       'New Collection',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
-                    Opacity(
+                    const Opacity(
                       opacity: .8,
                       child: Text(
                         'Disscount 50% for\nthe first transaction',
@@ -41,7 +41,7 @@ class HomeCollection extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 18,
                     ),
                     ElevatedButton(
@@ -51,11 +51,11 @@ class HomeCollection extends StatelessWidget {
                         elevation: 4,
                       ),
                       onPressed: () {},
-                      child: Text('ShopNow'),
+                      child: const Text('ShopNow'),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 55,
                 ),
                 Image.asset(

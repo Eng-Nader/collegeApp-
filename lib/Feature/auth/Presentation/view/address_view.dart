@@ -22,7 +22,7 @@ class AddressView extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 60,
             ),
             CustomAppBar(
@@ -34,7 +34,7 @@ class AddressView extends StatelessWidget {
               itemCount: addressList.length,
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: EdgeInsets.only(bottom: 20),
+                  padding: const EdgeInsets.only(bottom: 20),
                   child: AddressTextFiled(
                     hint: addressList[index],
                     label: addressList[index],

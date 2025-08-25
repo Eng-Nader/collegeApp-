@@ -11,31 +11,31 @@ class ResentPasswordView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24),
+        padding: const EdgeInsets.symmetric(horizontal: 24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             IconButton(
               onPressed: () => context.go(forgetPassword),
-              icon: Icon(Icons.arrow_back_ios),
+              icon: const Icon(Icons.arrow_back_ios),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Text(
+            const Text(
               'Enter Verification Code',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.w700,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            Text.rich(
+            const Text.rich(
               TextSpan(
                 children: [
                   TextSpan(
@@ -55,11 +55,11 @@ class ResentPasswordView extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 33,
             ),
-            ItemOtp(),
-            SizedBox(
+            const ItemOtp(),
+            const SizedBox(
               height: 31,
             ),
             CustomButton(
@@ -67,10 +67,10 @@ class ResentPasswordView extends StatelessWidget {
                 onPressed: () {
                   context.go(newPasswrod);
                 }),
-            SizedBox(
+            const SizedBox(
               height: 24,
             ),
-            Align(
+            const Align(
               alignment: Alignment.center,
               child: Text.rich(
                 TextSpan(

@@ -17,7 +17,7 @@ class SplashViewBody extends StatelessWidget {
                 width: 100,
                 AppAssets.splashLogo,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
               Image.asset(

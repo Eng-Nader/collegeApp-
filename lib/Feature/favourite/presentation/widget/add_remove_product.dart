@@ -29,7 +29,7 @@ class _AddAndRmoveProductState extends State<AddAndRmoveProduct> {
     return Container(
       height: 40,
       width: 150,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.all(
           Radius.circular(8),
@@ -40,18 +40,18 @@ class _AddAndRmoveProductState extends State<AddAndRmoveProduct> {
         children: [
           IconButton(
             onPressed: removeProduct,
-            icon: Icon(
+            icon: const Icon(
               Icons.remove,
               size: 30,
             ),
           ),
           Text(
             '$productMount',
-            style: TextStyle(fontSize: 25),
+            style: const TextStyle(fontSize: 25),
           ),
           IconButton(
             onPressed: addProduct,
-            icon: Icon(
+            icon: const Icon(
               Icons.add,
               size: 30,
             ),

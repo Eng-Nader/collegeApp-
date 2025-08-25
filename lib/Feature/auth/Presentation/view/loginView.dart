@@ -16,22 +16,22 @@ class LoginView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: SingleChildScrollView(
-          physics: NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               CustomAppBar(
                 title: 'Login',
                 onPressed: () => context.go('/'),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
-              Text(
+              const Text(
                 'Hi Welcome Back , you have been Missed',
                 style: TextStyle(
                   color: Colors.black,
@@ -39,17 +39,17 @@ class LoginView extends StatelessWidget {
                   fontWeight: FontWeight.w800,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              CustomTextFild(
+              const CustomTextFild(
                 icon: Icons.email,
                 title: 'Enter your Email',
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
-              CustomTextFild(
+              const CustomTextFild(
                 icon: Icons.lock,
                 title: 'Enter your password',
                 suffixIcon: Icons.visibility_off,
@@ -63,12 +63,12 @@ class LoginView extends StatelessWidget {
                   onPressed: () {
                     context.go(forgetPassword);
                   },
-                  child: Text(
+                  child: const Text(
                     'Forget password',
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               CustomButton(
@@ -84,14 +84,14 @@ class LoginView extends StatelessWidget {
                   );
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              CustomTextAuth(),
-              SizedBox(
+              const CustomTextAuth(),
+              const SizedBox(
                 height: 50,
               ),
-              Stack(
+              const Stack(
                 children: [
                   Align(
                     alignment: Alignment.center,
@@ -105,24 +105,24 @@ class LoginView extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
-              CustomFildButoom(
+              const CustomFildButoom(
                 image: AppAssets.googleLogo,
                 title: 'Sign in With Google',
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
-              CustomFildButoom(
+              const CustomFildButoom(
                 image: AppAssets.facebookLogo,
                 title: 'Sign in With FaceBook ',
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
-              CustomFildButoom(
+              const CustomFildButoom(
                 image: AppAssets.appleLogo,
                 title: 'Sign in With Apple',
               )

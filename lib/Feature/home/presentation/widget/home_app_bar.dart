@@ -15,7 +15,7 @@ class HomeAppBar extends StatelessWidget {
           onPressed: () {
             context.go(loginView);
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios,
             size: 30,
           ),

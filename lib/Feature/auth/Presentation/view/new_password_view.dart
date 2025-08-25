@@ -12,58 +12,58 @@ class NewPasswordView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             IconButton(
               onPressed: () => context.go(resentpassword),
-              icon: Icon(
+              icon: const Icon(
                 Icons.arrow_back_ios,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 44,
             ),
-            Text(
+            const Text(
               'Create New Password',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.w700,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Text(
+            const Text(
               'Create your new password to login',
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w400,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 24,
             ),
-            CustomTextFild(
+            const CustomTextFild(
               icon: Icons.lock,
               title: 'Enter Your Password',
               suffixIcon: Icons.visibility_off,
               isObsure: true,
             ),
-            SizedBox(
+            const SizedBox(
               height: 11,
             ),
-            CustomTextFild(
+            const CustomTextFild(
               icon: Icons.lock,
               title: 'Enter Your Password',
               suffixIcon: Icons.visibility_off,
               isObsure: true,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             CustomButton(

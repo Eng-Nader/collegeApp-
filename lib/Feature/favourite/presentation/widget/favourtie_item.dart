@@ -11,7 +11,7 @@ class FavouriteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 8),
       child: Column(
         children: [
           Stack(
@@ -20,7 +20,7 @@ class FavouriteItem extends StatelessWidget {
                 AppAssets.salesWoman,
                 fit: BoxFit.cover,
               ),
-              Positioned(
+              const Positioned(
                 top: 5,
                 left: 5,
                 child: CircleAvatar(
@@ -32,7 +32,7 @@ class FavouriteItem extends StatelessWidget {
               )
             ],
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
@@ -48,7 +48,7 @@ class FavouriteItem extends StatelessWidget {
               Rating(),
             ],
           ),
-          Align(
+          const Align(
             alignment: Alignment(.9, 0),
             child: Text(
               r'$19.99',

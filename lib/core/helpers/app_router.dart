@@ -19,63 +19,63 @@ class AppRoute {
       GoRoute(
         path: '/',
         builder: (context, state) {
-          return SplashView();
+          return const SplashView();
         },
       ),
       GoRoute(
           path: signupView,
           builder: (context, state) {
-            return SignupView();
+            return const SignupView();
           }),
       GoRoute(
           path: introductionView,
           builder: (context, state) {
-            return IntroductionView();
+            return const IntroductionView();
           }),
       GoRoute(
           path: loginView,
           builder: (context, state) {
-            return LoginView();
+            return const LoginView();
           }),
       GoRoute(
           path: profileView,
           builder: (context, state) {
-            return ProfileView();
+            return const ProfileView();
           }),
       GoRoute(
           path: addressView,
           builder: (context, state) {
-            return AddressView();
+            return const AddressView();
           }),
       GoRoute(
           path: forgetPassword,
           builder: (context, state) {
-            return ForgetBaswordView();
+            return const ForgetBaswordView();
           }),
       GoRoute(
           path: resentpassword,
           builder: (context, state) {
-            return ResentPasswordView();
+            return const ResentPasswordView();
           }),
       GoRoute(
           path: newPasswrod,
           builder: (context, state) {
-            return NewPasswordView();
+            return const NewPasswordView();
           }),
       GoRoute(
           path: homeView,
           builder: (context, state) {
-            return HomeView();
+            return const HomeView();
           }),
       GoRoute(
           path: favDetails,
           builder: (context, state) {
-            return FavouriteViewDetails();
+            return const FavouriteViewDetails();
           }),
       GoRoute(
         path: faveView,
         builder: (context, state) {
-          return FavouriteView();
+          return const FavouriteView();
         },
       ),
     ],

@@ -9,7 +9,7 @@ class FavouriteGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverGrid.builder(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
       ),
       itemCount: 8,
@@ -18,7 +18,7 @@ class FavouriteGrid extends StatelessWidget {
           onTap: () {
             context.push(favDetails);
           },
-          child: FavouriteItem(),
+          child: const FavouriteItem(),
         );
       },
     );

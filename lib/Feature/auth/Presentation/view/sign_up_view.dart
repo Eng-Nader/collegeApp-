@@ -14,39 +14,39 @@ class SignupView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             CustomAppBar(
               title: 'SingUp',
               onPressed: () => context.go(loginView),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            CustomTextFild(
+            const CustomTextFild(
               icon: Icons.person,
               title: 'Enter Your Name',
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            CustomTextFild(
+            const CustomTextFild(
               icon: Icons.email,
               title: 'Enter Your Email',
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            CustomTextFild(
+            const CustomTextFild(
               icon: Icons.lock,
               title: 'Enter Your password',
               suffixIcon: Icons.lock_open,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -55,7 +55,7 @@ class SignupView extends StatelessWidget {
                   value: false,
                   onChanged: (value) {},
                 ),
-                Text.rich(
+                const Text.rich(
                   TextSpan(
                     children: [
                       TextSpan(
@@ -89,7 +89,7 @@ class SignupView extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             CustomButton(
@@ -104,10 +104,10 @@ class SignupView extends StatelessWidget {
                     onPressed: () => context.go(loginView));
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            CustomTextAuth(),
+            const CustomTextAuth(),
           ],
         ),
       ),

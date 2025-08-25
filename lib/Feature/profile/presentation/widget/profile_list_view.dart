@@ -16,7 +16,7 @@ class ProfileListView extends StatelessWidget {
       itemCount: profileList.length,
       itemBuilder: (context, index) {
         return Padding(
-          padding: EdgeInsets.all(12),
+          padding: const EdgeInsets.all(12),
           child: Card(
             color: Colors.white,
             child: ListTile(
@@ -27,7 +27,7 @@ class ProfileListView extends StatelessWidget {
               ),
               title: Text(
                 profileList[index].text,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.black,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,

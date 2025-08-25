@@ -11,7 +11,7 @@ class FavourteViewDetailsBody extends StatelessWidget {
       body: Stack(
         children: [
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage(
@@ -27,13 +27,13 @@ class FavourteViewDetailsBody extends StatelessWidget {
               onPressed: () {
                 context.pop();
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.arrow_back_ios,
                 size: 30,
               ),
             ),
           ),
-          ShowBottomDetials()
+          const ShowBottomDetials()
         ],
       ),
     );

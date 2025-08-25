@@ -15,7 +15,7 @@ class CollegeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0xffF4F5F7),
+        scaffoldBackgroundColor: const Color(0xffF4F5F7),
       ),
       debugShowCheckedModeBanner: false,
       routerConfig: AppRoute.router,

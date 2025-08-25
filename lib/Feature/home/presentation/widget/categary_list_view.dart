@@ -71,7 +71,7 @@ class _CategaryListViewState extends State<CategaryListView> {
     return SizedBox(
       height: 100,
       child: ListView.builder(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         itemCount: categatyList.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {

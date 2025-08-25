@@ -14,7 +14,7 @@ class CustomTextAuth extends StatelessWidget {
       onTap: () {
         context.go(signupView); 
       },
-      child: Text.rich(
+      child: const Text.rich(
         TextSpan(
           children: [
             TextSpan(

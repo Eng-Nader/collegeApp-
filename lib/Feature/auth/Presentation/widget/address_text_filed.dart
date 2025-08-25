@@ -15,12 +15,12 @@ class AddressTextFiled extends StatelessWidget {
       decoration: InputDecoration(
         hint: Row(
           children: [
-            SizedBox(
+            const SizedBox(
               width: 15,
             ),
             Text(
               hint,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.black,
                 fontSize: 20,
               ),
@@ -29,20 +29,20 @@ class AddressTextFiled extends StatelessWidget {
         ),
         label: Text(
           label,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.black,
             fontSize: 20,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
-          borderSide: BorderSide(
+          borderSide: const BorderSide(
             color: Colors.grey,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
-          borderSide: BorderSide(
+          borderSide: const BorderSide(
             color: Colors.grey,
           ),
         ),

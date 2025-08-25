@@ -22,10 +22,10 @@ class DialogBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            CircleAvatar(
+            const CircleAvatar(
               backgroundColor: Color(0xffF5F8FF),
               radius: 50,
               child: Icon(
@@ -34,17 +34,17 @@ class DialogBody extends StatelessWidget {
                 color: primaryColor,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Text(
               content,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 7,
             ),
             Opacity(
@@ -53,11 +53,11 @@ class DialogBody extends StatelessWidget {
                 child: Text(
                   textAlign: TextAlign.center,
                   subContent,
-                  style: TextStyle(fontSize: 16),
+                  style: const TextStyle(fontSize: 16),
                 ),
               ),
             ),
-            SizedBox(height: 37),
+            const SizedBox(height: 37),
             CustomButton(
               title: titelButtom,
               onPressed:  onPressed , 

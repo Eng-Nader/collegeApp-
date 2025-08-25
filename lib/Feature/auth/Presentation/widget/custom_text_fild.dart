@@ -28,19 +28,19 @@ class CustomTextFild extends StatelessWidget {
               icon,
               color: Colors.grey,
             ),
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
             Text(title),
           ],
         ),
-        fillColor: Color(0xffF9FAFB),
+        fillColor: const Color(0xffF9FAFB),
         filled: true,
-        enabledBorder: OutlineInputBorder(
+        enabledBorder: const OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(20)),
           borderSide: BorderSide(color: Colors.grey),
         ),
-        focusedBorder: OutlineInputBorder(
+        focusedBorder: const OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(20)),
             borderSide: BorderSide(
               color: primaryColor,

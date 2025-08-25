@@ -10,16 +10,16 @@ class CustomAppBar extends StatelessWidget {
       children: [
         IconButton(
           onPressed: onPressed,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 130,
         ),
         Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.black,
             fontSize: 18,
             fontWeight: FontWeight.w700,

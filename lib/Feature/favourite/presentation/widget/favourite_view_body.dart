@@ -13,24 +13,24 @@ class FavouriteViewBody extends StatelessWidget {
         SliverToBoxAdapter(
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               CustomAppBar(
                 title: 'My Wishlist',
                 onPressed: () {},
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              SalesListView(),
-              SizedBox(
+              const SalesListView(),
+              const SizedBox(
                 height: 32,
               ),
             ],
           ),
         ),
-        FavouriteGrid(),
+        const FavouriteGrid(),
       ],
     );
   }

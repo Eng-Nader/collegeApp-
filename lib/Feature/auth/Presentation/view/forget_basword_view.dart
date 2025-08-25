@@ -17,10 +17,10 @@ class _ForgetBaswordViewState extends State<ForgetBaswordView> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Align(
@@ -29,13 +29,13 @@ class _ForgetBaswordViewState extends State<ForgetBaswordView> {
                 onPressed: () {
                   context.go(loginView);
                 },
-                icon: Icon(Icons.arrow_back_ios),
+                icon: const Icon(Icons.arrow_back_ios),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Align(
+            const Align(
               alignment: Alignment.centerLeft,
               child: Text(
                 'Forget Your Password ?',
@@ -46,10 +46,10 @@ class _ForgetBaswordViewState extends State<ForgetBaswordView> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Opacity(
+            const Opacity(
               opacity: .4,
               child: Text(
                 'Enter your email or your phone number, we will send you confirmation code',
@@ -58,7 +58,7 @@ class _ForgetBaswordViewState extends State<ForgetBaswordView> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Container(
@@ -101,14 +101,14 @@ class _ForgetBaswordViewState extends State<ForgetBaswordView> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             CustomTextFild(
               icon: isPhone == true ? Icons.phone : Icons.email,
               title: isPhone == true ? 'Enter your Phone ' : 'Enter your Email',
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             CustomButton(

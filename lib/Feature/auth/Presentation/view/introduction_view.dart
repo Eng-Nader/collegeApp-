@@ -11,11 +11,11 @@ class IntroductionView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 6),
+        padding: const EdgeInsets.symmetric(horizontal: 6),
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 70,
               ),
               Row(
@@ -24,20 +24,20 @@ class IntroductionView extends StatelessWidget {
                   Container(
                     height: 370,
                     width: 137,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage(AppAssets.manLoog),
                       ),
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 30),
+                    padding: const EdgeInsets.only(left: 30),
                     child: Column(
                       children: [
                         Container(
                           height: 214,
                           width: 137,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage(
                                 AppAssets.man2Logo,
@@ -45,10 +45,10 @@ class IntroductionView extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 23,
                         ),
-                        CircleAvatar(
+                        const CircleAvatar(
                           radius: 70,
                           backgroundImage: AssetImage(
                             AppAssets.womanLogo,
@@ -59,10 +59,10 @@ class IntroductionView extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 33,
               ),
-              Text.rich(
+              const Text.rich(
                 textAlign: TextAlign.center,
                 TextSpan(
                   children: [
@@ -93,10 +93,10 @@ class IntroductionView extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
-              Opacity(
+              const Opacity(
                 opacity: .8,
                 child: Text(
                   textAlign: TextAlign.center,
@@ -107,7 +107,7 @@ class IntroductionView extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 61,
               ),
               CustomButton(

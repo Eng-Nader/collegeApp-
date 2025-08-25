@@ -16,7 +16,7 @@ class CategaryItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 15),
       child: Column(
         children: [
           GestureDetector(
@@ -26,12 +26,12 @@ class CategaryItem extends StatelessWidget {
               backgroundColor: isActive ? primaryColor : Colors.white,
               child: CircleAvatar(
                 radius: 33,
-                backgroundColor: Color(0xffF4F5F7),
+                backgroundColor: const Color(0xffF4F5F7),
                 child: Image.asset(categaryModel.image),
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Text(

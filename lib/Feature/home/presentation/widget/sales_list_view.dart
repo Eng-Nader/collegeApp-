@@ -48,7 +48,7 @@ class _SalesListViewState extends State<SalesListView> {
     return SizedBox(
       height: 30,
       child: ListView.builder(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemCount: salesList.length,
         itemBuilder: (context, index) {

@@ -1,6 +1,5 @@
 import 'package:college_app/Feature/auth/data/model/profile_model.dart';
 import 'package:college_app/Feature/profile/presentation/widget/profile_list_view.dart';
-import 'package:college_app/constant.dart';
 import 'package:college_app/core/assets/app_assets.dart';
 import 'package:flutter/material.dart';
 
@@ -11,9 +10,9 @@ class ProfileViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       slivers: [
-        SliverToBoxAdapter(
+        const SliverToBoxAdapter(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Column(

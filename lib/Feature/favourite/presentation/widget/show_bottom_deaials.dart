@@ -17,14 +17,14 @@ class ShowBottomDetials extends StatelessWidget {
       left: 0,
       child: Container(
         height: 400,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xfff4f5f7),
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(25),
             topRight: Radius.circular(25),
           ),
         ),
-        child: Padding(
+        child: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

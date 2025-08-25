@@ -20,7 +20,7 @@ class _ColorItemState extends State<ColorItem> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(
+        const Text(
           'Color : ',
           style: TextStyle(
             fontSize: 20,
@@ -40,7 +40,7 @@ class _ColorItemState extends State<ColorItem> {
                   );
                 },
                 child: Padding(
-                  padding: EdgeInsets.only(left: 8),
+                  padding: const EdgeInsets.only(left: 8),
                   child: CircleAvatar(
                     radius: 18,
                     backgroundColor:
