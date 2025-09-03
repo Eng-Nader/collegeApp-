@@ -1,3 +1,4 @@
+import 'package:college_app/Feature/auth/Presentation/widget/custom_app_bar.dart';
 import 'package:college_app/Feature/auth/Presentation/widget/custom_button.dart';
 import 'package:college_app/constant.dart';
 import 'package:college_app/core/assets/app_assets.dart';
@@ -16,8 +17,9 @@ class IntroductionView extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(
-                height: 70,
+                height: 50,
               ),
+              CustomAppBar(onPressed: () => context.pop()),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [

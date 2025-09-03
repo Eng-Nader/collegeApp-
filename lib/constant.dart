@@ -1,4 +1,5 @@
 import 'dart:ui';
+
 const Color primaryColor = Color(0xffDD8560);
 const Color secondryColor = Color(0xffF9FAFB);
 const String loginView = '/login';
@@ -13,7 +14,4 @@ const String introductionView = '/intro';
 const String favDetails = '/details';
 const String faveView = '/favView';
 const String onBorder = '/onBorderView';
-const String  onborderSecond = '/onbordersecond';
-
-
-
+const String onborderSecond = '/onbordersecond';

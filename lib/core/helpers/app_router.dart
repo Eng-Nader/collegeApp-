@@ -9,7 +9,6 @@ import 'package:college_app/Feature/favourite/presentation/view/favourite_view_d
 import 'package:college_app/Feature/home/presentation/views/favourite_view.dart';
 import 'package:college_app/Feature/home/presentation/views/home_view.dart';
 import 'package:college_app/Feature/onboardin/presentation/views/on_boarding_view.dart';
-import 'package:college_app/Feature/onboardin/presentation/views/second_screen.dart';
 import 'package:college_app/Feature/profile/presentation/view/profile_view.dart';
 import 'package:college_app/Feature/splash/presentation/view/splash_view.dart';
 import 'package:college_app/constant.dart';
@@ -86,16 +85,7 @@ class AppRoute {
           return const OnBoardingView();
         },
       ),
-      GoRoute(
-        path: onborderSecond,
-        builder: (context, state) {
-          return SecondScreen(
-            currentIndex: 1,
-            onTap: () {},
-            onPrviousTap: () {},
-          );
-        },
-      ),
+    
     ],
   );
 }

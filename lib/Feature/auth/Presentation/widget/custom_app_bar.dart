@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key, required this.title, required this.onPressed});
-  final String title;
-  final VoidCallback onPressed ; 
+  const CustomAppBar({
+    super.key,
+    required this.onPressed,
+    this.title = '',
+  });
+  final String? title;
+  final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -18,7 +22,7 @@ class CustomAppBar extends StatelessWidget {
           width: 130,
         ),
         Text(
-          title,
+          title!,
           style: const TextStyle(
             color: Colors.black,
             fontSize: 18,
